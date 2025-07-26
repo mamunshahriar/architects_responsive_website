@@ -36,8 +36,15 @@
     font-size: 1.25rem;
     border-radius: 8px;
     border: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
+.btn-primary:hover {
+  background-color: #0056b3;         /* Darker blue on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
 /* header style */
 
 /* navbar related style */
@@ -89,4 +96,16 @@ font-size: 2.8rem;
 
     font-weight: 700;
     font-size: 4rem;
+}
+
+.banner-image{
+    width: 100%;
+
+}
+
+/* responsive media query */ 
+@media screen and (max-width:576px ) {
+    .navbar, .nav-link{
+        flex-direction: column;
+    }
 }
